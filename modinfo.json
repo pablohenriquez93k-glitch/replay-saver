@@ -1,0 +1,27 @@
+{
+  "context": "client",
+  "identifier": "com.pa.pablo.replaysaver",
+  "display_name": "Replay Saver",
+  "description": "Auto-saves a replay when a single-player match ends and adds a Watch Replay button to Load Game.",
+  "author": "Pablo & Claude",
+  "version": "1.0.0",
+  "build": "124674",
+  "date": "2026-09-27",
+  "signature": " ",
+  "forum": "https://github.com/pablohenriquez93k-glitch/replay-saver",
+  "category": ["titans", "ui", "replays"],
+  "scenes": {
+    "live_game": [
+      "coui://ui/mods/com.pa.pablo.replaysaver/common.js",
+      "coui://ui/mods/com.pa.pablo.replaysaver/live_game.js"
+    ],
+    "save_game_browser": [
+      "coui://ui/mods/com.pa.pablo.replaysaver/common.js",
+      "coui://ui/mods/com.pa.pablo.replaysaver/save_game_browser.js"
+    ],
+    "settings": [
+      "coui://ui/mods/com.pa.pablo.replaysaver/common.js",
+      "coui://ui/mods/com.pa.pablo.replaysaver/settings.js"
+    ]
+  }
+}
