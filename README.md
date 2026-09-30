@@ -51,3 +51,7 @@ Mod de cliente (UI) para **Planetary Annihilation: TITANS**.
 
 1. Copia `modinfo.json`, `README.md` y la carpeta `ui` a `%LOCALAPPDATA%\Uber Entertainment\Planetary Annihilation\mods\com.pa.pablo.replaysaver` (el juego monta esa carpeta como `/client_mods/`; `com.pa.pablo.replaysaver` debe contener `modinfo.json` directamente). Si descargaste el `main.zip` de GitHub, el contenido viene dentro de la carpeta `replay-saver-main`: copia lo que hay dentro.
 2. Activa **Replay Saver** en *Community Mods → Instalados* y reinicia el juego.
+
+## Licencia
+
+MIT, ver [LICENSE](LICENSE). © 2026 Pablo Henriquez.
