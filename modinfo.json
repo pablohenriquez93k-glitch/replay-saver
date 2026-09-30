@@ -9,6 +9,7 @@
   "date": "2026-09-30",
   "signature": " ",
   "forum": "https://github.com/pablohenriquez93k-glitch/replay-saver",
+  "icon": "https://raw.githubusercontent.com/pablohenriquez93k-glitch/replay-saver/main/assets/icon.png",
   "category": ["titans", "ui", "replays"],
   "scenes": {
     "live_game": [
