@@ -27,7 +27,7 @@ Client (UI) mod for **Planetary Annihilation: TITANS**.
 
 ## License
 
-MIT, see [LICENSE](LICENSE). © 2026 Pablo Henriquez.
+MIT, see [LICENSE](LICENSE). (c) 2026 Pablo Henriquez.
 
 ---
 
@@ -54,4 +54,4 @@ Mod de cliente (UI) para **Planetary Annihilation: TITANS**.
 
 ## Licencia
 
-MIT, ver [LICENSE](LICENSE). © 2026 Pablo Henriquez.
+MIT, ver [LICENSE](LICENSE). (c) 2026 Pablo Henriquez.
