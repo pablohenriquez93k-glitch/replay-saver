@@ -4,7 +4,7 @@ Client (UI) mod for **Planetary Annihilation: TITANS**.
 
 ## Features
 
-- **Auto-save replay at match end.** When a single-player match ends (you win, lose or surrender), the full match is saved as `AI Skirmish <date> AUTO-REPLAY`. When you leave the match, the same file is overwritten so the replay also includes what happened after your defeat (e.g. AIs still fighting in FFA). Quitting a match in progress from the menu counts as a surrender and is saved too.
+- **Auto-save replay at match end.** When a single-player match ends (you win, lose or surrender), the full match is saved as `AI Skirmish <date> AUTO-REPLAY`. When you leave the match, the same file is overwritten so the replay also includes what happened after your defeat (e.g. AIs still fighting in FFA). Quitting a match in progress from the menu counts as a surrender and is saved too. Leaving waits until the save is written (usually 1-2 s); if the game never confirms it, you leave after 15 s anyway and the replay may miss the last part.
 - **Watch Replay button** in *Load Game*. Opens any local save as a replay, including mid-game saves, without modifying the file. *Resume Game* keeps working as before, except on auto-saves: they are replays and cannot be resumed, so the button is greyed out for them. If the save needs the other game mode, you are asked to confirm the switch first.
 - **Setting** in *Settings → Gameplay*: "Auto-save Replay at Match End" (ON by default).
 
@@ -37,7 +37,7 @@ Mod de cliente (UI) para **Planetary Annihilation: TITANS**.
 
 ## Qué hace
 
-- **Guarda el replay al terminar la partida.** Cuando termina una partida de un solo jugador (ganas, pierdes o te rindes), guarda la partida completa como `AI Skirmish <fecha> AUTO-REPLAY`. Al salir de la partida sobrescribe el mismo archivo, así el replay incluye lo que pasó después de tu derrota (por ejemplo, las IA peleando en FFA). Salir con Menú → Quit en plena partida cuenta como rendirse y también se guarda.
+- **Guarda el replay al terminar la partida.** Cuando termina una partida de un solo jugador (ganas, pierdes o te rindes), guarda la partida completa como `AI Skirmish <fecha> AUTO-REPLAY`. Al salir de la partida sobrescribe el mismo archivo, así el replay incluye lo que pasó después de tu derrota (por ejemplo, las IA peleando en FFA). Salir con Menú → Quit en plena partida cuenta como rendirse y también se guarda. Al salir espera a que se escriba el guardado (por lo general 1-2 s); si el juego no lo confirma, sales igual a los 15 s y al replay le puede faltar el final.
 - **Botón "Ver replay"** en *Partidas guardadas*. Abre cualquier guardado local como replay, incluso los guardados a mitad de partida, sin modificar el archivo. *Retomar partida* funciona igual que antes, salvo en los autoguardados: son replays y no se pueden retomar, así que el botón se ve gris. Si el guardado necesita el otro modo de juego, primero te pide confirmar el cambio.
 - **Opción** en *Ajustes → Jugabilidad*: "Guardar replay al terminar la partida" (activada por defecto).
 

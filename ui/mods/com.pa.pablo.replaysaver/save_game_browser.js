@@ -41,10 +41,13 @@
     };
 
 
-    /* auto-saves are replays: Resume Game can't continue them, so block and dim it (Watch Replay opens them) */
+    /* auto-saves are replays: Resume Game can't continue them, so block and dim it (Watch Replay opens them).
+       An auto-save has the AUTO-REPLAY name and was written as type 'replay' (localReplay);
+       a manual save with that text in its name is type 'save' and stays resumable. */
     model.replaySaverIsAuto = ko.computed(function () {
         var game = model.selectedGame();
-        return !!(game && game.name && game.name.indexOf(replaySaver.text('AUTO-REPLAY')) !== -1);
+        return !!(game && game.localReplay && game.name
+            && game.name.indexOf(replaySaver.text('AUTO-REPLAY')) !== -1);
     });
 
     var stockLoad = model.loadGame;
@@ -67,8 +70,8 @@
     $('#confirmSwitchModes').on('hidden.bs.modal', function () { pendingWatch = null; });
 
     $('head').append('<style>'
-        + '#game-bar { display: flex; justify-content: flex-end; }'
-        + '#replay-saver-watch { min-width: 220px; margin-right: 8px; }'
+        /* #game-bar is already flex in the stock css: push only our button and Resume right */
+        + '#replay-saver-watch { min-width: 220px; margin-left: auto; margin-right: 8px; }'
         + '</style>');
 
     $('#game-bar #join').before(
